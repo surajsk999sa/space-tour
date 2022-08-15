@@ -1,0 +1,284 @@
+ /* font-family import */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap'); 
+
+:root{
+    --primary-font-family:'Bellefair', serif;
+    --secondary-font-family:'Barlow Condensed', sans-serif;
+    --tertiary-font-family:  'Titillium Web', sans-serif;
+    --primary-font-color: #ffffff;
+    --secondary-font-color:#D0D6F9;
+    
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*navbar style*/
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-family: var(--secondary-font-family);
+    justify-content: space-between;
+    margin: 3rem 0;
+    align-items: center;
+
+}
+hr{
+    border: 1px solid rgb(50, 50, 50);
+    width: 38%;
+}
+/*logo */
+ .logo{
+    margin-left: clamp(1em, 3vw,5rem);
+ }
+ /*nav item style*/
+ .nav-item{
+    padding-left: clamp(1em,4vw,3rem);
+    padding-right: clamp(1em,5vw,5rem);
+     width: 57%;
+     display: flex;
+     flex-direction: row;
+     background: rgba(46, 46, 46, 0.4);
+     backdrop-filter: blur(14px);
+     -webkit-backdrop-filter: blur(17px); 
+
+ }
+ .number{
+    letter-spacing: 0.09rem;
+    font-weight: bold;
+    margin-right: clamp(0.3em,1vw,0.5rem);
+ }
+  .item{
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    font-size: clamp(0.7em,2vw,1rem);
+    letter-spacing: 0.1rem;
+    padding: 2.2rem 0 ;
+
+  }
+
+  /*hero section style */
+  #hero-section{
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   margin: 1rem auto;
+   justify-content: space-between;
+
+  }
+   /*hero section text style */
+   .text-container{
+      width: 45%;
+      text-align: left;
+      padding-top: 11rem;
+   }
+   .see-you-text{
+      font-family: var(--secondary-font-family);
+      color: var(--secondary-font-color);
+      font-size: clamp(1.3em, 3vw,2.5rem);
+      padding-bottom: clamp(0.3em,2vw,1.3rem);
+      font-weight: 100;
+      word-spacing: 0.2rem;
+   }
+   .space-text{
+      font-family: var(--primary-font-family);
+      color: var(--primary-font-color);
+      font-size: clamp(5.6em, 17vw,12rem);
+      font-weight: 100;
+   }
+   .information-text{
+      font-family: var(--tertiary-font-family);
+      color: var(--secondary-font-color);
+      font-size: clamp(0.8em, 2vw, 1.1rem);
+      letter-spacing: 0.18rem;
+      font-weight: 100;
+   }
+ 
+   /* explore button */
+   .explore-button{
+      background-color: var(--primary-font-color);
+      font-family: var(--primary-font-family);
+      color: #000;
+      font-size: clamp(1.3em,3vw,2.5rem);
+      padding: 7rem 3.2rem;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 700ms 39ms;
+   }
+   .explore-button:hover{
+    transform: scale(1.2, 1.2);
+    opacity: 0.7;
+    backdrop-filter: blue(28px);
+    
+   }
+   .button-container{
+      width: 30%;
+      margin-top:  17.8rem;
+   }
+ 
+  /*nav bar responsive style*/
+  @media (max-width:900px){
+  .navbar{
+    margin: 1rem 0;
+   }
+   hr{
+    width: 0;
+
+   }
+   .nav-item{
+    width: 75%;
+    justify-content: space-between;
+   }
+   .item{
+    padding: 1.3rem 0;
+   }
+
+  }
+
+   /* tablets nav bar style */
+   @media (max-width:770px){
+     body{
+        background-image: url(/image/background-home-tablet.jpg);
+     }
+     /*nav bar number */
+     .number{
+        visibility: hidden;
+     }
+     #hero-section{
+      flex-direction: column;
+      width: 70%;
+      margin: 0 auto;
+      
+     }
+     .text-container{
+      text-align: center;
+      width: 100%;
+      padding-top: 6rem;
+     }
+     .button-container{
+      margin: 6rem auto;
+      width: 30%;
+      align-items: center;
+     }
+     .explore-button{
+      padding: 4rem 2rem;
+     }
+     
+   }
+   
+   /* mobile display style */
+   @media (max-width:375px){
+    body{
+        background-image: url(/image/background-home-mobile.jpg);
+    }
+    .number{
+        letter-spacing: 0.09rem;
+        font-weight: bold;
+        margin-right: clamp(0.3em,1vw,0.5rem);
+        visibility: visible;
+     }
+     /*navbar items*/
+     .nav-item{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -270px;
+        transition: all 1000ms 50ms;
+        z-index: 2;
+        display: none;
+     }
+     #home-nav{
+        margin-top: 3rem;
+     }
+     /*nav bar show class */
+     .show-navbar{
+      display: flex;
+        right: -10px;
+     }
+     /*hamburger menu style */
+     .hamburger-icon{
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        z-index: 1;
+     }
+     /* close icon in nav item */
+     .close-icon{
+        display: block;
+        position: relative;
+        top: 28px;
+        right: -155px;
+     }
+
+     /* this class show which page we are right now */
+     .active{
+        color: #ffffff;
+     }
+
+     /* hero section style */
+     #hero-section{
+      margin: 0 auto;
+      width: 100%;
+     }
+     .text-container{
+      padding-top: 2rem;
+      width: 90%;
+      margin: 0 auto;
+     }
+     .button-container{
+      margin: 4rem auto;
+      width: 40%;
+     }
+     .explore-button{
+      margin: 0 auto;
+     }
+     .space-text{
+      padding-bottom: 1rem;
+     }
+   }
+
+   /*some style for after mobile to tablet device move*/
+   @media (min-width:376px){
+    .nav-item{
+        justify-content: space-around;
+    }
+      /*active class show which page we are now*/
+  .active{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+   /* item hover effect */
+   .effect{
+    transition: all 300ms 10ms;
+  }
+  .effect:hover{
+    color:#ffffff;
+    border-bottom: 2px solid #D0D6F9;
+  }
+  /*hamburger icon hide */
+  .hamburger-icon{
+    display: none;
+  }
+  /*close icon hide */
+  .close-icon{
+    display: none;
+  }
+   }

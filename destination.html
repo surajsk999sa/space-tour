@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space tourism- destination</title>
+    <link rel="stylesheet" href="/css/destination.css">
+</head>
+<body>
+  <audio autoplay loop src="cosmicglow.mp3" type="audio/mp3"></audio>
+
+     <!-- navbar section  -->
+     <nav class="navbar">
+        <!--logo of space explore-->
+        <div class="logo">
+          <img src="icon/logo.svg" alt="logo of space explore" />
+        </div>
+        <hr>
+        <!--nav bar item-->
+        <div class="nav-item">
+          <div class="close-icon">
+            <img src="icon/icon-close.svg" alt=" close menu icon " />
+          </div>
+
+          <a href="index.html" id="home-nav" class="item effect"> <span class="number">00</span>HOME</a>
+          <a href="destination.html" class="item active"> <span class="number">01</span>DESTINATION</a>
+          <a href="crew.html" class="item effect"> <span class="number">02</span>CREW</a>
+          <a href="technology.html" class="item effect"> <span class="number">03</span>TECHNOLOGY</a>
+        </div>
+
+        <!--menu and close icon-->
+        <div class="hamburger-icon">
+          <img src="icon/icon-hamburger.svg" alt="menu icon" />
+        </div>
+     </nav>
+
+     <!--destination main section-->
+     <div style="z-index: 10;" id="destination-section">
+       <!--destination image container-->
+       <div class="destination-image-container">
+        <h3 class="destination-head-text">  <span class="number">01</span> Pick your destination</h3>
+         <!--destination picture-->
+         <div class="destination-image">
+          <img id="planed-image" style="width: 100%;" src="/image/image-moon.png" alt="destination planed picture">
+         </div>
+       </div>
+      <!--destination information container-->
+      <div  class="destination-information-container">
+        <!--PLANED BUTTON CONTAINER-->
+        <div class="button-container">
+          <button id="moon" class="moon btn ">MOON</button>
+          <button id="mars" class="mars btn ">MARS</button>
+          <button id="europa" class="europa btn">EUROPA</button>
+          <button id="titan" class="titan btn">TITAN</button>
+        </div>
+        <!--planed information text container-->
+        <div class="planed-information-container">
+          <h1 class="planed-name">MOON</h1>
+          <p class="planed-information">
+            See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+            regain perspective and come back refreshed. While you’re there, take in some history 
+            by visiting the Luna 2 and Apollo 11 landing sites.
+          </p>
+          <hr class="bottom-hr">
+        </div>
+        <!--distance and travel time text container-->
+        <div class="planed-more-information">
+          <!--distance-->
+          <div class="distance-container">
+            <h4 class="avg-text">AVG. DISTANCE</h4>
+            <h1 class="distance">384,400 KM</h1>
+          </div>
+          <!--travel time-->
+          <div class="travel-time-container">
+            <h4 class="est-text">EST. TRAVEL TIME</h4>
+            <h1 id="time" class="travel-time">3 DAYS</h1>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     <!--home page javascript source page-->
+    <script src="/JS/home.js"></script>
+     <!-- gsap cdn link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!--destination page javascript source page-->
+    <script src="/JS/destination.js"></script>
+</body>
+</html>

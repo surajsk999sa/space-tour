@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space tourism- home</title>
+    <!-- home style sheet link-->
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <audio autoplay loop src="cosmicglow.mp3" type="audio/mp3"></audio>
+      <!-- navbar section  -->
+      <nav  class="navbar">
+        <!--logo of space explore-->
+        <div class="logo">
+          <img src="icon/logo.svg" alt="logo of space explore"/>
+        </div>
+        <hr>
+        <!--nav bar item-->
+        <div class="nav-item">
+          <div class="close-icon">
+            <img src="icon/icon-close.svg" alt=" close menu icon " />
+          </div>
+
+          <a href="index.html" id="home-nav" class="item active"> <span class="number">00</span>HOME</a>
+          <a href="destination.html" class="item effect"> <span class="number">01</span>DESTINATION</a>
+          <a href="crew.html" class="item effect"> <span class="number">02</span>CREW</a>
+          <a href="technology.html" class="item effect"> <span class="number">03</span>TECHNOLOGY</a>
+        </div>
+
+        <!--menu and close icon-->
+        <div class="hamburger-icon">
+          <img src="icon/icon-hamburger.svg" alt="menu icon" />
+        </div>
+     
+      </nav>
+        
+
+      <!--hero section-->
+      <div id="hero-section">
+        <!--text container-->
+        <div class="text-container">
+          <!--first text -->
+          <h2 class="see-you-text">SO, YOU WANT TO TRAVEL TO</h2>
+          <!--space-->
+          <h1 class="space-text">SPACE</h1>
+          <!--information about space explore-->
+          <h5 class="information-text">
+           <span class="info" >Let’s face it; if you want to go to space, you might as well</span> 
+          <span class="info"> genuinely go to outer space and not hover kind of on the edge of it.</span> 
+          <span class="info" > Well sit back, and relax because we’ll give you a truly out of this</span> 
+           <span class="info" >world experience!</span> 
+          </h5>
+        </div>
+        <!--explore button container--> 
+        <div class="button-container">
+          <button class="explore-button">
+            <a style="text-decoration: none; color:black; " href="destination.html"> EXPLORE</a>
+          </button>
+        </div>
+      </div>
+      <!-- gsap cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!--home script file link-->  
+    <script src="JS/home.js"></script>
+  </body>
+</html>

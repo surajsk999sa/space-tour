@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space tourism- Technology</title>
+    <link rel="stylesheet" href="/css/technology.css" />
+  </head>
+  <body>
+    <!-- navbar section  -->
+    <nav class="navbar">
+      <!--logo of space explore-->
+      <div class="logo">
+        <img src="icon/logo.svg" alt="logo of space explore" />
+      </div>
+      <hr />
+      <!--nav bar item-->
+      <div class="nav-item">
+        <div class="close-icon">
+          <img src="icon/icon-close.svg" alt=" close menu icon " />
+        </div>
+
+        <a href="index.html" id="home-nav" class="item effect">
+          <span class="number">00</span>HOME</a
+        >
+        <a href="destination.html" class="item effect">
+          <span class="number">01</span>DESTINATION</a
+        >
+        <a href="crew.html" class="item effect"> <span class="number">02</span>CREW</a>
+        <a href="technology.html" class="item active">
+          <span class="number">03</span>TECHNOLOGY</a
+        >
+      </div>
+
+      <!--menu and close icon-->
+      <div class="hamburger-icon">
+        <img src="icon/icon-hamburger.svg" alt="menu icon" />
+      </div>
+    </nav>
+   <!--head section text-->
+   <h3 class="head-text">03 <span style="font-weight: bold;"> SPACE LAUNCH VEHICLE 101</span></h3>
+    <!--space launch vehicle section-->
+    <div id="technology-section">
+      <!--vehicle image section -->
+      <div class="vehicle-image-container">
+        <img id="landscape-image" src="image/image-launch-vehicle-landscape.jpg" alt="launch vehicle image" />
+
+        <img id="portrait-image" src="image/image-launch-vehicle-portrait.jpg" alt="launch vehicle image" />
+      </div>
+      <!--vehicle information container-->
+      <div class="vehicle-information-container">
+        <div class="tec-button-container">
+          <button id="one" class="one-btn effect-btn">1</button>
+          <button id="two" class="two-btn effect-btn">2</button>
+          <button id="three" class="three-btn effect-btn">3</button>
+        </div>
+        <!--information of vehicle -->
+        <div class="information-text-container">
+          <h3 class="terminal-text">THE TERMINOLOGY...</h3>
+          <h2 class="vehicle-name">LAUNCH VEHICLE</h2>
+          <p class="information-of-vehicle">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+        </div>
+      </div>
+    </div>
+  <!-- gsap cdn link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!--home javascript script -->
+    <script src="/JS/home.js"></script>
+    <!--technology javascript script-->
+    <script src="/JS/technology.js"></script>
+  </body>
+</html>

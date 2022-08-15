@@ -1,0 +1,374 @@
+ /* font-family import */
+ @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap'); 
+ 
+ :root{
+     --primary-font-family:'Bellefair', serif;
+     --secondary-font-family:'Barlow Condensed', sans-serif;
+     --tertiary-font-family:  'Titillium Web', sans-serif;
+     --primary-font-color: #ffffff;
+     --secondary-font-color:#dfdfdf;
+     
+ }
+ 
+ *{
+     margin: 0;
+     box-sizing: border-box;
+ }
+ body{
+     width: 100%;
+     height: 100%;
+     background-image: url(/image/background-technology-desktop.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ /*navbar style*/
+ .navbar{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     font-family: var(--secondary-font-family);
+     justify-content: space-between;
+     margin: 3rem 0;
+     align-items: center;
+ 
+ }
+ hr{
+     border: 1px solid rgb(50, 50, 50);
+     width: 38%;
+ }
+ /*logo */
+  .logo{
+     margin-left: clamp(1em, 3vw,5rem);
+  }
+  /*nav item style*/
+  .nav-item{
+     padding-left: clamp(1em,4vw,3rem);
+     padding-right: clamp(1em,5vw,5rem);
+      width: 57%;
+      display: flex;
+      flex-direction: row;
+      background: rgba(46, 46, 46, 0.4);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(17px); 
+ 
+  }
+  .number{
+     letter-spacing: 0.09rem;
+     font-weight: bold;
+     margin-right: clamp(0.3em,1vw,0.5rem);
+  }
+   .item{
+     color: var(--secondary-font-color);
+     text-decoration: none;
+     font-size: clamp(0.7em,1.8vw,0.9rem);
+     letter-spacing: 0.1rem;
+     padding: 2.2rem 0 ;
+ 
+   }
+
+   /*vehicle container common style */
+   #technology-section{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%;
+      margin-top: 3.2rem;
+
+   }
+   .head-text{
+      font-family: var(--secondary-font-family);
+      color: var(--secondary-font-color);
+      font-size: clamp(1.07em, 2vw,1.7rem);
+      letter-spacing: 0.12rem;
+      word-spacing: 0.07rem;
+      margin-left: clamp(1rem, 15vw, 15rem);
+      font-weight: 100;
+
+   }
+   /* vehicle-image-container */
+   .vehicle-image-container{
+      width: 30%;
+   }
+   #landscape-image{
+      display: none;
+   }
+   #portrait-image{
+    width: 100%;
+   } 
+   .vehicle-information-container{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 50%;
+      height: 50vh;
+      margin: auto;
+   }
+   .tec-button-container{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 64%;
+      width: 9.5%;
+      margin: auto 0;
+   }
+   .one-btn,.two-btn,.three-btn{
+      font-family: var(--primary-font-family);
+      color: var(--primary-font-color);
+      font-size: clamp(1.1em, 1.5vw, 2rem);
+      /* padding: clamp(0.5em, 3vw,2rem); */
+      padding: 1.18rem 1.9rem;
+      border-radius: 50%;
+      border: 1px solid var(--primary-font-color);
+      background-color: transparent;
+      cursor: pointer;
+      /* width: 10%; */
+
+   }
+   /*button active and effect style */
+   
+   .btn-active{
+      color: black;
+      background-color: var(--primary-font-color);
+      font-weight: bold;
+   }
+   .effect-btn{
+      transition: all 570ms 10ms;
+   }
+   .effect-btn:focus,
+   .effect-btn:hover{
+      color: black;
+      background-color: var(--primary-font-color);
+      font-weight: bold;
+   }
+    /*information text container style */
+    .information-text-container{
+      margin: auto;
+      width: 73%;
+    }
+    .terminal-text{
+      font-family: var(--secondary-font-family);
+      color: var(--secondary-font-color);
+      font-size: clamp(0.9em, 2vw, 1.3rem);
+      font-weight: 100;
+      letter-spacing: 0.rem;
+
+    }
+    .vehicle-name{
+      font-family: var(--primary-font-family);
+      color: var(--primary-font-color);
+      font-size: clamp(1.86em, 5vw,3.3rem);
+      font-weight: 100;
+      margin: 0.8rem auto;
+      letter-spacing: 0.12rem;
+
+    }
+    .information-of-vehicle{
+      font-family: var(--tertiary-font-family);
+      color: var(--secondary-font-color);
+      font-size: clamp(1.02em,1.8vw,1.1rem);
+      letter-spacing: 0.11rem;
+      margin-top: 1.8rem;
+    }
+
+   /*nav bar responsive style*/
+  @media (max-width:900px){
+    .navbar{
+      margin: 1rem 0;
+     }
+     hr{
+      width: 0;
+  
+     }
+     .nav-item{
+      width: 75%;
+      justify-content: space-between;
+     }
+     .item{
+      padding: 1.3rem 0;
+     }
+   
+  
+    }
+
+   
+      
+     /* tablets nav bar style */
+   @media (max-width:770px){
+    body{
+      margin: 0;
+       background-image: url(/image/background-technology-tablet.jpg);
+    }
+    /*nav bar number */
+    .number{
+       visibility: hidden;
+    }
+    #technology-section{
+      flex-direction: column;
+      width: 100%;
+      margin: 1rem auto;
+
+    }
+    .head-text{
+      font-weight: 100;
+      margin: 3rem 2rem;
+    }
+    .vehicle-image-container{
+      width: 100%;
+
+    }
+    #portrait-image{
+      display: none;
+    }
+    #landscape-image{
+      width: 100%;
+      display: block;
+    }
+    .vehicle-information-container{
+    flex-direction: column;
+    width: 65%;
+    margin: 1rem auto;
+    }
+    .tec-button-container{
+      flex-direction: row;
+      width: 50%;
+      margin: 1rem auto;
+      height: 12%;
+    }
+    .information-text-container{
+      text-align: center;
+    }
+    .one-btn,.two-btn,.three-btn{
+      padding: 0.4rem 1.2rem;
+    }
+    }
+
+    
+  /* mobile display style */
+  @media (max-width:375px){
+    body{
+        background-image: url(/image/background-technology-mobile.jpg);
+    }
+    .number{
+        letter-spacing: 0.09rem;
+        font-weight: bold;
+        margin-right: clamp(0.3em,1vw,0.5rem);
+        visibility: visible;
+     }
+     /*navbar items*/
+     .nav-item{
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: -270px;
+        transition: all 1000ms 50ms;
+        z-index: 2;
+        display: none;
+     }
+     #home-nav{
+        margin-top: 3rem;
+     }
+     /*nav bar show class */
+     .show-navbar{
+      display: flex;
+        right: -10px;
+     }
+     /*hamburger menu style */
+     .hamburger-icon{
+        display: block;
+        position: absolute;
+        top: 28px;
+        right: 22px;
+        z-index: 1;
+     }
+     /* close icon in nav item */
+     .close-icon{
+        display: block;
+        position: relative;
+        top: 28px;
+        right: -155px;
+     }
+ 
+     /* this class show which page we are right now */
+     .active{
+        color: #ffffff;
+     }
+     /* technology section*/
+     #technology-section{
+      width: 100%;
+      flex-direction: column;
+      margin: 1rem auto;
+     }
+     .head-text{
+      text-align: center;
+      font-weight: 100;
+      margin-bottom: 1.8rem;
+     }
+     .vehicle-image-container{
+      width: 100%;
+     }
+     #portrait-image{
+      display: none;
+     }
+     #landscape-image{
+      width: 100%;
+      display: block;
+     }
+
+     .vehicle-information-container{
+      flex-direction: column;
+      width: 90%;
+      margin: 1rem auto;
+
+     }
+     .tec-button-container{
+      flex-direction: row;
+      width: 50%;
+      margin: 1.5rem auto;
+     }
+     .one-btn,.two-btn,.three-btn{
+      padding: 0.5rem 0.9rem;
+     }
+     .information-text-container{
+      width: 95%;
+      margin: 1.5rem auto;
+      text-align: center;
+     }
+
+  }
+
+  
+  /*some style for after mobile to tablet device move*/
+  @media (min-width:376px){
+    .nav-item{
+        justify-content: space-around;
+    }
+      /*active class show which page we are now*/
+  .active{
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+   /* item hover effect */
+   .effect{
+    transition: all 300ms 10ms;
+  }
+  .effect:hover{
+    color:#ffffff;
+    border-bottom: 2px solid #D0D6F9;
+  }
+  /*hamburger icon hide */
+  .hamburger-icon{
+    display: none;
+  }
+  /*close icon hide */
+  .close-icon{
+    display: none;
+  }
+   }
+ 
